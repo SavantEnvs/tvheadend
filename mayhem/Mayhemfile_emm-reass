@@ -1,0 +1,9 @@
+project: savantenvs/tvheadend
+target: emm-reass
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/emm-reass/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_emm_reass
+    libfuzzer: true
+    timeout: 10

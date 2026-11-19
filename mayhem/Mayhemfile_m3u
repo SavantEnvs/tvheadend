@@ -1,0 +1,9 @@
+project: savantenvs/tvheadend
+target: m3u
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/m3u/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_m3u
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/tvheadend
+target: dvb-string
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dvb-string/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_dvb_string
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/tvheadend
+target: htsmsg-binary
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/htsmsg-binary/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_htsmsg_binary
+    libfuzzer: true
+    timeout: 10

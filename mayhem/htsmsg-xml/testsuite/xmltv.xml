@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "xmltv.dtd">
+<tv generator-info-name="x">
+  <channel id="c1.example"><display-name lang="en">One &amp; Two</display-name><icon src="http://x/l.png"/></channel>
+  <programme start="20261119120000 +0100" stop="20261119130000 +0100" channel="c1.example">
+    <title lang="en">News &#x263A; &#65;</title><desc><![CDATA[Some <b>text</b>]]></desc>
+    <episode-num system="xmltv_ns">1.2.0/1</episode-num><star-rating><value>3/5</value></star-rating>
+  </programme>
+</tv>

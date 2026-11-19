@@ -1,0 +1,16 @@
+json_object	{"a":1,"b":"xéy","c":[1,2.5,-3],"d":{"e":true}}
+json_escapes	["tab\there","q\"uote","sl/ash"]
+json_invalid	(null)
+binary_roundtrip	len=87 {"method":"hello","htspversion":34,"list":["a","b"],"sub":{"n":-7}}
+xml_simple	{"tags":{"tv":{"tags":{"channel":{"attrib":{"id":"c1"},"tags":{"display-name":{"attrib":{"lang":"en"},"cdata":"One & Two"}}}}}}}
+xml_charref	{"tags":{"a":{"cdata":"AB<raw>"}}}
+xml_unclosed	{"tags":{"a":{"tags":{"b":{}}}}}
+m3u_extinf	{"items":[{"m3u-duration":-1,"tvg-id":"ch1","tvg-logo":"logo.png","group-title":"News","m3u-name":"Channel One","m3u-url":"http://srv/stream1.ts"},{"m3u-duration":5,"m3u-name":"Second","m3u-url":"http://example.com/dir/rel/stream2.ts"}]}
+m3u_not_m3u	{"items":[]}
+url_full	scheme=http user=user pass=pw host=example.com port=8080 path=/path/x.ts query=a=1&b=2 frag=frag raw=http://user:pw@example.com:8080/path/x.ts?a=1&b=2
+url_rtsp	scheme=rtsp user= pass= host=10.0.0.1 port=0 path=/ query=src=1&freq=11494&pol=h&msys=dvbs frag= raw=rtsp://10.0.0.1/?src=1&freq=11494&pol=h&msys=dvbs
+url_bad	error
+dvb_ascii	Hello World
+dvb_8859_9	Güzel
+dvb_utf8	café
+dvb_date	750516300

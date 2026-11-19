@@ -1,0 +1,1 @@
+rtsp://192.168.1.10:554/?src=1&freq=11494&pol=h&msys=dvbs

@@ -1,0 +1,9 @@
+project: savantenvs/tvheadend
+target: ts-parser
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ts-parser/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_ts_parser
+    libfuzzer: true
+    timeout: 10

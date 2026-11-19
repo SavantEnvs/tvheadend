@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:satip="urn:ses-com:satip">
+<specVersion><major>1</major><minor>1</minor></specVersion>
+<device><deviceType>urn:ses-com:device:SatIPServer:1</deviceType><friendlyName>Tuner caf�</friendlyName>
+<satip:X_SATIPCAP>DVBS2-2,DVBT-2</satip:X_SATIPCAP><UDN>uuid:11223344-9999-0000-0000-000000000000</UDN></device>
+</root>

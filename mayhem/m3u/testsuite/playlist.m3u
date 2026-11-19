@@ -1,0 +1,8 @@
+#EXTM3U x-tvg-url="http://x/epg.xml"
+#EXTINF:-1 tvg-id="ch1" tvg-name="One" tvg-logo="logo.png" tvg-chno="5" group-title="News",Channel One
+#EXTVLCOPT:http-user-agent=foo
+http://srv/stream1.ts
+#EXTINF:5,Second
+rel/stream2.ts
+#EXT-X-STREAM-INF:BANDWIDTH=1280000
+../hls/low.m3u8
